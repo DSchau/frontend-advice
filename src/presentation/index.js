@@ -1,10 +1,10 @@
-import React from "react";
-import { Slide as SlideComponent, SlideSet } from "spectacle";
+import React from 'react';
+import { Slide as SlideComponent, SlideSet } from 'spectacle';
 
-import * as INTRO from "./intro";
-import * as ADVICE from "./advice";
-import * as RESOURCES from "./resources";
-import * as CONCLUSION from "./conclusion";
+import * as INTRO from './intro';
+import * as ADVICE from './advice';
+import * as RESOURCES from './resources';
+import * as CONCLUSION from './conclusion';
 
 export const makeSlides = slides => {
   return slides.map((slideset, index) => (

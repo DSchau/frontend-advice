@@ -1,15 +1,15 @@
-import React from "react";
-import { Heading } from "spectacle";
-import styled from "react-emotion";
+import React from 'react';
+import { Heading } from 'spectacle';
+import styled from 'react-emotion';
 
-import reactLogo from "./assets/images/react-icon.svg";
-import downloadsStats from "./assets/images/download-stats.png";
-import buildAnything from "./assets/images/build-anything.jpeg";
+import reactLogo from './assets/images/react-icon.svg';
+import downloadsStats from './assets/images/download-stats.png';
+import buildAnything from './assets/images/build-anything.jpeg';
 
-import { Emoji, Image } from "../../components";
-import { SPIN } from "../../style";
+import { Emoji, Image } from '../../components';
+import { SPIN } from '../../style';
 
-const SpinningImage = styled("img")({
+const SpinningImage = styled('img')({
   animation: `${SPIN} 5s infinite`
 });
 
@@ -20,7 +20,7 @@ export const FirstACaveat = () => (
 );
 
 FirstACaveat.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };
 
 export const BuildAnything = () => (
@@ -34,6 +34,12 @@ BuildAnything.Props = {
   bgDarken: 0.5
 };
 
+export const NoSeriouslyAnything = () => <Emoji character="🤔" />;
+
+NoSeriouslyAnything.Props = {
+  bgColor: 'black'
+};
+
 export const PutItOnGithub = () => (
   <Heading size={2} textFont="Arvo" textColor="white">
     Open source it
@@ -41,7 +47,7 @@ export const PutItOnGithub = () => (
 );
 
 PutItOnGithub.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };
 
 export const UseWhatYouLike = () => (
@@ -51,7 +57,7 @@ export const UseWhatYouLike = () => (
 );
 
 UseWhatYouLike.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };
 
 export const ReactSlide = () => <SpinningImage src={reactLogo} />;
@@ -63,12 +69,36 @@ export const ReactIsEatingTheWorld = () => (
 );
 
 ReactIsEatingTheWorld.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };
 
 export const DownloadStats = () => <Image src={downloadsStats} />;
 
 export const MindBlown = () => <Emoji character="🤯" />;
+
+MindBlown.Props = {
+  bgColor: 'black'
+};
+
+export const LearnJavaScript = () => (
+  <Heading size={2} textFont="Arvo" textColor="white">
+    Learn JavaScript before frameworks
+  </Heading>
+);
+
+LearnJavaScript.Props = {
+  bgColor: 'tertiary'
+};
+
+export const CSSAndHTMLToo = () => (
+  <Heading size={2} textFont="Arvo" textColor="white">
+    Don't forget about CSS &amp; HTML
+  </Heading>
+);
+
+CSSAndHTMLToo.Props = {
+  bgColor: 'tertiary'
+};
 
 export const NoBoilerplates = () => (
   <Heading size={2} textFont="Arvo" textColor="white">
@@ -77,7 +107,7 @@ export const NoBoilerplates = () => (
 );
 
 NoBoilerplates.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };
 
 export const CliTooling = () => (
@@ -87,5 +117,5 @@ export const CliTooling = () => (
 );
 
 CliTooling.Props = {
-  bgColor: "tertiary"
+  bgColor: 'tertiary'
 };

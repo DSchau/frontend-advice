@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "react-emotion";
+import React from 'react';
+import styled from 'react-emotion';
 
-const Character = styled("span")({
+const Character = styled('span')({
   fontSize: 256
 });
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   BlockQuote,
   Cite,
@@ -6,9 +6,9 @@ import {
   Layout,
   Link,
   Quote as QuoteComponent
-} from "spectacle";
+} from 'spectacle';
 
-import { Image } from "../Image";
+import { Image } from '../Image';
 
 const Author = ({ author, to: href }) => {
   return (
@@ -44,10 +44,10 @@ export class QuoteSlide extends Component {
     }
     return (
       <Layout>
-        <Fill style={{ maxWidth: "40%" }}>
+        <Fill style={{ maxWidth: '40%' }}>
           <Image src={image} style={{ borderRadius: 300 }} />
         </Fill>
-        <Fill style={{ display: "flex", alignItems: "center" }}>
+        <Fill style={{ display: 'flex', alignItems: 'center' }}>
           <Quote textSize={32} {...rest} />
         </Fill>
       </Layout>

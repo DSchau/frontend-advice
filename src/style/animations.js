@@ -1,4 +1,4 @@
-import { keyframes } from "emotion";
+import { keyframes } from 'emotion';
 
 export const SPIN = keyframes`
   from {

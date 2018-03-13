@@ -3,6 +3,7 @@ import { Slide as SlideComponent, SlideSet } from 'spectacle';
 
 import * as INTRO from './intro';
 import * as ADVICE from './advice';
+import * as TOOLS from './tools';
 import * as RESOURCES from './resources';
 import * as CONCLUSION from './conclusion';
 
@@ -24,4 +25,4 @@ export const makeSlides = slides => {
   ));
 };
 
-export default makeSlides([INTRO, ADVICE, RESOURCES, CONCLUSION]);
+export default makeSlides([INTRO, ADVICE, TOOLS, RESOURCES, CONCLUSION]);

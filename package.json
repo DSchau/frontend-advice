@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "emotion": "~9.0.2",
+    "isomorphic-fetch": "~2.2.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-emotion": "~9.0.2",

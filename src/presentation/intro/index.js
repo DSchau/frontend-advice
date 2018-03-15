@@ -25,7 +25,6 @@ export const Intro = () => (
     style={{
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'center',
       minHeight: '85vh'
     }}

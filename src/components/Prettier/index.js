@@ -58,6 +58,7 @@ export class Prettier extends Component {
           lang="javascript"
           theme="light"
           textSize={24}
+          {...this.props}
         />
         <Button onClick={this.handleClick}>
           <span role="img" aria-label="Nail polish">

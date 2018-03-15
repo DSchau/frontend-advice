@@ -2,22 +2,23 @@ import React from 'react';
 import { Heading, Link } from 'spectacle';
 import styled from 'react-emotion';
 
-import codeAcademy from './assets/images/code-academy.png';
-import mdn from './assets/images/mdn.png';
-import stackOverflow from './assets/images/stack-overflow.png';
-import frontendDevBookmarks from './assets/images/frontend-dev-bookmarks.png';
-import codeSandbox from './assets/images/code-sandbox.png';
+import codeAcademy from './assets/images/code-academy-optimized.png';
+import mdn from './assets/images/mdn-optimized.png';
+import stackOverflow from './assets/images/stack-overflow-optimized.png';
+import google from './assets/images/google-it.gif';
+import frontendDevBookmarks from './assets/images/frontend-dev-bookmarks-optimized.png';
+import codeSandbox from './assets/images/code-sandbox-optimized.png';
 
-import cassidy from './assets/images/people/cassidy-williams.jpeg';
-import jdd from './assets/images/people/john-david-dalton.jpeg';
-import kcd from './assets/images/people/kent-c-dodds.jpeg';
-import sarah from './assets/images/people/sarah-drasner.jpeg';
-import da from './assets/images/people/dan-abramov.jpeg';
+import cassidy from './assets/images/people/cassidy-williams-optimized.jpeg';
+import jdd from './assets/images/people/john-david-dalton-optimized.jpeg';
+import kcd from './assets/images/people/kent-c-dodds-optimized.jpeg';
+import sarah from './assets/images/people/sarah-drasner-optimized.jpeg';
+import da from './assets/images/people/dan-abramov-optimized.jpeg';
 import gm from './assets/images/people/glen-maddern.png';
-import ch from './assets/images/people/cory-house.jpeg';
-import sp from './assets/images/people/sunil-pai.jpeg';
-import ao from './assets/images/people/addy-osmani.jpeg';
-import horse from './assets/images/people/horse-js.png';
+import ch from './assets/images/people/cory-house-optimized.jpeg';
+import sp from './assets/images/people/sunil-pai-optimized.jpeg';
+import ao from './assets/images/people/addy-osmani-optimized.jpeg';
+import horse from './assets/images/people/horse-js-optimized.png';
 
 import { Image } from '../../components';
 
@@ -29,7 +30,7 @@ const PersonImage = styled(Image)({
 
 export const ButHow = () => (
   <Heading size={2} textFont="Arvo" textColor="white">
-    OK, but how?
+    OK great, but how?
   </Heading>
 );
 
@@ -69,6 +70,16 @@ export const StackOverflow = () => (
 
 StackOverflow.Props = {
   bgColor: 'black'
+};
+
+export const GoogleIt = () => (
+  <Link href="https://google.com" target="_blank" rel="noopener">
+    <Image src={google} />
+  </Link>
+);
+
+GoogleIt.Props = {
+  bgColor: 'white'
 };
 
 export const FrontendDevBookmarks = () => (

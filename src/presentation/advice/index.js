@@ -1,10 +1,13 @@
 import React from 'react';
 import { Heading } from 'spectacle';
 import styled from 'react-emotion';
+import Player from 'react-player';
 
 import reactLogo from './assets/images/react-icon.svg';
-import downloadsStats from './assets/images/download-stats.png';
-import buildAnything from './assets/images/build-anything.jpeg';
+import downloadsStats from './assets/images/download-stats-optimized.png';
+import buildAnything from './assets/images/build-anything-optimized.jpeg';
+
+import devtoolsVideo from './assets/video/devtools.mp4';
 
 import { Emoji, Image } from '../../components';
 import { SPIN } from '../../style';
@@ -99,6 +102,10 @@ export const CSSAndHTMLToo = () => (
 CSSAndHTMLToo.Props = {
   bgColor: 'tertiary'
 };
+
+export const Devtools = () => (
+  <Player url={devtoolsVideo} loop={true} width="100%" controls={true} />
+);
 
 export const NoBoilerplates = () => (
   <Heading size={2} textFont="Arvo" textColor="white">

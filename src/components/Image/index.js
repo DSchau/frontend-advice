@@ -16,7 +16,6 @@ export function Image({ className, style = {}, ...rest }) {
         className={className}
         style={{
           display: 'block',
-          maxWidth: '100%',
           ...style
         }}
         {...rest}

@@ -43,8 +43,8 @@ export class Prettier extends Component {
       .then(json => {
         this.setState({
           code: json.code.replace(
-            'This code is a dumpster fire',
-            'This code is NOT a dumpster fire'
+            'This is poorly formatted',
+            'This is NOT poorly formatted'
           )
         });
       });
